@@ -30,8 +30,7 @@ gulp.task('git-commit', function () {
 // Tarea para realizar un push a GitHub
 gulp.task('git-push', function (cb) {
   git.push('origin', 'main', function (err) {
-    if (err) throw err;
-    cb();
+    if (err) return cb(err);
   });
 });
 
