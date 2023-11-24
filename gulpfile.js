@@ -34,5 +34,7 @@ gulp.task('git-push', function (cb) {
   });
 });
 
+//holaaa
+
 // Tarea predeterminada que ejecuta las tareas 'borrar-css', 'compilar-sass' y las tareas de Git en secuencia
 gulp.task('default', gulp.series('borrar-css', 'compilar-sass', 'git-add', 'git-commit', 'git-push'));
