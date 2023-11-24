@@ -1,0 +1,280 @@
+@import "./variables.scss";
+
+@import "./mixins.scss";
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('../fuentes/MonteCarlo-Regular.ttf') format('truetype'); 
+}
+
+@font-face{
+    font-family: 'Barra';
+    src: url('../fuentes/Neucha-Regular.ttf') format('truetype'); 
+}
+
+@font-face{
+    font-family: 'Texto';
+    src: url('../fuentes/Montaga-Regular.ttf') format('truetype'); 
+}
+
+header {
+    padding-bottom: 1px;
+    background-color: $color_encabezado;
+    .icono {
+        text-align: center;
+    }
+    .banderas {
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        .espa{
+            background-color: $blanco;
+            border-radius: 20px;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            transition: background-color 0.5s ease;
+            .esp{
+                margin-top: 5px;
+            }
+        }
+        .portu{
+            margin-left: 20px;
+            background-color: $blanco;
+            border-radius: 20px;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            transition: background-color 0.5s ease;
+            .port{
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .espa:hover{
+        background-color: $rojobandera;
+    }
+    .portu:hover{
+        background-color: $rojobandera;
+    }
+
+    h1 {
+        text-align: center;
+        color: $color_letra_barra;
+        font-family: 'Titulo';
+        font-size: 70px;
+        margin: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+    h1:hover{
+        transform: scale(1.1);
+    }
+        
+    .barra{
+        @include flex();
+        flex-direction: row;
+        justify-content: center; 
+        background-color: $color_barra;
+        width: 65%; 
+        height: 60px;
+        margin: auto;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        
+        p{
+            margin: 10px;
+            padding: 5%;
+            font-family: 'Barra';
+            font-size: 230%;
+            a{
+                text-decoration: none;
+                color: $color_letra_barra;
+            }
+            a:hover {
+                color: $blanco;
+            }
+        }
+        .barrita{
+            background-color: $color_letra_barra;
+            width: 2.5px;
+            height: 100%;
+            padding: 0;
+        }
+        .barrita1{
+            background-color: $color_letra_barra;
+            width: 2.5px;
+            height: 100%;
+            padding: 0;
+        }
+    }
+}
+
+main {
+    background-color: $color_main;
+    display: flex;
+    padding: 20px;
+
+    .texto{
+        background-color: $color_fondo_texto;
+        margin: 10px;
+        border-radius: 20px;
+        color: $blanco;
+        transition: background-color 0.5s ease;
+        .fototexto{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            @include flex();
+            justify-content: space-between;
+            h2{
+                font-family: 'Titulo';
+                font-size: 50px;
+                font-weight: normal;
+                text-align: center;
+                margin: 0;
+            }
+            img{
+                border-radius: 20px;
+            }
+        }
+        .barratexto{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 5px;
+            background-color: $color_barra;
+        }
+        p{
+            padding: 20px;
+            margin-right: 50px;
+            margin-left: 50px;
+            font-family: 'Texto';
+            text-align:justify;
+            font-size: 24px;
+        }
+    }
+
+    .texto:hover{
+        background-color: $colorfondopasteleria;
+    }
+
+
+    .video{
+        flex-direction: column;
+        justify-content: center;
+        @include flex();
+
+        video{
+        border-radius: 20px;
+        margin: 10px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        box-shadow: 10px 10px 5px rgba(65, 65, 65, 0.5)
+        }
+
+        img{
+           margin: 0 auto;
+           transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+footer {
+    background-color: $color_footer;
+    color: $blanco;
+    @include flex();
+    justify-content: space-between;
+    p{
+        font-family: 'Texto';
+        margin: 30px;
+        font-size: 18px;
+        }
+        p:hover{
+            color: $negro;
+        }
+}
+
+
+@media only screen and (max-width: 1300px){
+header{
+    .barra{
+        p{
+            font-size: 130%;
+        }
+    }
+}
+main{
+    flex-direction: column;
+    .video{
+        video{
+            width: 700px;
+            height: auto;
+        }
+        img{
+            width: 600px;
+            height: auto;
+        }
+    }
+    .texto{
+        .fototexto{
+            h2{
+                font-size: 50px;
+            }
+        }
+            p{
+                font-size: 25px;
+            }
+    }
+}
+footer{
+    p{
+        font-size: 14px;
+    }
+}
+}
+
+@media only screen and (max-width: 800px){
+    header{
+        .barra{
+            p{
+                font-size: 80%;
+            }
+        }
+    }
+    main{
+        flex-direction: column;
+        .video{
+            video{
+                width: 400px;
+                height: auto;
+                
+            }
+            img{
+                width: 300px;
+                height: auto;
+            }
+        }
+        .texto{
+            .fototexto{
+                h2{
+                    font-size: 30px;
+                }
+            }
+                p{
+                    font-size: 15px;
+                }
+        }
+    }
+    footer{
+        p{
+            font-size: 9px;
+        }
+    }
+    }

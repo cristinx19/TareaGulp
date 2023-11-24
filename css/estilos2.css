@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "Titulo";
+  src: url("../fuentes/MonteCarlo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Barra";
+  src: url("../fuentes/Neucha-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Texto";
+  src: url("../fuentes/Montaga-Regular.ttf") format("truetype");
+}
+header {
+  padding-bottom: 1px;
+  background-color: #F1E2CD;
+}
+header .icono {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+header .icono .botonatras {
+  background-color: #D5B197;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-family: "Barra";
+  font-weight: bold;
+  margin-bottom: 70px;
+  padding-bottom: 19px;
+  margin-right: 15%;
+  transition: background-color 0.5s ease;
+}
+header .icono .botonatras p a {
+  text-decoration: none;
+  color: black;
+}
+header .icono .botonatras:hover {
+  background-color: #5F3D1E;
+}
+header .icono h1 {
+  padding-top: 40px;
+  font-weight: normal;
+  color: #5B3E23;
+  font-family: "Barra";
+  font-size: 70px;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+header .icono h1:hover {
+  transform: translateY(-10px);
+}
+
+main .dos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 100px);
+  justify-items: center;
+  align-items: center;
+  gap: 70px;
+  padding: 40px;
+  padding-bottom: 50px;
+  background-color: #D5B197;
+}
+main .dos .texto {
+  background-color: #967455;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 140px;
+  transition: background-color 0.5s ease;
+}
+main .dos .texto .barras {
+  background-color: #5B3E23;
+  width: 5px;
+  height: 100%;
+}
+main .dos .texto .fotos {
+  padding: 15px;
+}
+main .dos .texto .descripcion h2 {
+  margin: 0;
+  padding: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Barra";
+  font-weight: normal;
+}
+main .dos .texto .descripcion p {
+  font-family: "Barra";
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+main .dos .texto:hover {
+  background-color: #825B37;
+}
+main .uno {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 70px;
+  padding: 40px;
+  padding-bottom: 50px;
+  background-color: #D5B197;
+}
+main .uno .texto {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #967455;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 140px;
+  transition: background-color 0.5s ease;
+}
+main .uno .texto .barras {
+  background-color: #5B3E23;
+  width: 4px;
+  height: 100%;
+}
+main .uno .texto .fotos {
+  padding: 15px;
+}
+main .uno .texto .descripcion h2 {
+  margin: 0;
+  padding: 2px;
+  margin-bottom: 9px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Barra";
+  font-weight: normal;
+}
+main .uno .texto .descripcion p {
+  font-family: "Barra";
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+main .uno .texto:hover {
+  background-color: #825B37;
+}
+main .titulo {
+  font-family: "Barra";
+  text-align: center;
+  font-size: 30px;
+  color: #5B3E23;
+  gap: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: #FCDBAD;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+main .titulo h2 {
+  transition: transform 0.3s ease-in-out;
+  font-weight: normal;
+}
+main .titulo img {
+  margin-top: 40px;
+}
+main h2:hover {
+  transform: scale(1.1);
+}
+main .ultimos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 100px);
+  justify-items: center;
+  align-items: center;
+  gap: 70px;
+  padding: 40px;
+  padding-bottom: 50px;
+  background-color: #FCDBAD;
+}
+main .ultimos .texto {
+  background-color: #5F3D1E;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 140px;
+  transition: background-color 0.5s ease;
+}
+main .ultimos .texto .barras {
+  background-color: #B99174;
+  width: 6px;
+  height: 100%;
+}
+main .ultimos .texto .fotos {
+  padding: 15px;
+}
+main .ultimos .texto .descripcion h2 {
+  margin: 0;
+  padding: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Barra";
+  font-weight: normal;
+}
+main .ultimos .texto .descripcion p {
+  font-family: "Barra";
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+main .ultimos .texto:hover {
+  background-color: #967455;
+}
+
+@media only screen and (max-width: 1150px) {
+  header .icono img {
+    width: 130px;
+    height: auto;
+  }
+  header .icono h1 {
+    font-size: 50px;
+  }
+  main .dos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 100px);
+  }
+  main .dos .texto {
+    width: 70%;
+  }
+  main .dos .texto .fotos img {
+    padding-top: 13px;
+    width: 100px;
+    height: 80px;
+  }
+  main .dos .texto .descripcion h2 {
+    font-size: 30px;
+  }
+  main .dos .texto .descripcion p {
+    font-size: 15px;
+  }
+  main .uno {
+    padding-top: 3px;
+  }
+  main .uno .texto {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 10%;
+  }
+  main .uno .texto .fotos img {
+    padding-top: 13px;
+    width: 100px;
+    height: 80px;
+  }
+  main .ultimos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 100px);
+  }
+  main .ultimos .texto {
+    width: 70%;
+  }
+  main .ultimos .texto .fotos img {
+    padding-top: 13px;
+    width: 100px;
+    height: 80px;
+  }
+  main .ultimos .texto .descripcion h2 {
+    font-size: 30px;
+  }
+  main .ultimos .texto .descripcion p {
+    font-size: 15px;
+  }
+}

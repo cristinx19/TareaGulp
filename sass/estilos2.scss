@@ -1,0 +1,338 @@
+@import "./variables.scss";
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('../fuentes/MonteCarlo-Regular.ttf') format('truetype'); 
+}
+
+@font-face{
+    font-family: 'Barra';
+    src: url('../fuentes/Neucha-Regular.ttf') format('truetype'); 
+}
+
+@font-face{
+    font-family: 'Texto';
+    src: url('../fuentes/Montaga-Regular.ttf') format('truetype'); 
+}
+
+header {
+    padding-bottom: 1px;
+    background-color: $color_encabezado;
+    .icono {
+        display: flex; 
+        align-items: center;
+        padding-left: 10px;
+        .botonatras{
+            background-color: $color_main;
+            border-radius: 20px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            font-family: 'Barra';
+            font-weight:bold;
+            margin-bottom: 70px;
+            padding-bottom: 19px;
+            margin-right: 15%;
+            transition: background-color 0.5s ease;
+            p{
+                a{
+                    text-decoration: none;
+                    color: $negro;
+                }
+            }
+        }
+
+        .botonatras:hover{
+            background-color: $colormarron;
+        }
+
+        h1 {
+            padding-top: 40px;
+            font-weight: normal;
+            color: $color_letra_barra;
+            font-family: 'Barra';
+            font-size: 70px;
+            margin: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+        h1:hover{
+            transform: translateY(-10px);
+        }
+    }
+}
+
+
+main {
+    .dos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 100px); 
+        justify-items: center;
+        align-items: center;
+        gap: 70px;
+        padding: 40px;
+        padding-bottom: 50px;
+        background-color: $color_main;
+        
+        .texto{
+            background-color: $color_fondo_texto;
+            border-radius: 20px;
+            color: $blanco;
+            display: flex;
+            flex-direction: row;
+            height: 140px;
+            transition: background-color 0.5s ease;
+            .barras{
+                background-color: $color_letra_barra;
+                width: 5px;
+                height: 100%;
+            }
+            .fotos{
+                padding: 15px;
+            }
+            .descripcion{
+                h2{
+                    margin: 0;
+                    padding: 2px;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: 'Barra';
+                    font-weight: normal;
+                }
+                p{
+                    font-family: 'Barra';
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .texto:hover{
+            background-color: $fondoempanada;
+        }
+    }
+
+    .uno{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        gap: 70px;
+        padding: 40px;
+        padding-bottom: 50px;
+        background-color: $color_main;
+        
+        .texto{
+            margin-left: 20%;
+            margin-right: 20%;
+            background-color: $color_fondo_texto;
+            border-radius: 20px;
+            color: $blanco;
+            display: flex;
+            flex-direction: row;
+            height: 140px;
+            transition: background-color 0.5s ease;
+            .barras{
+                background-color: $color_letra_barra;
+                width: 4px;
+                height: 100%;
+            }
+            .fotos{
+                padding: 15px;
+            }
+            .descripcion{
+                h2{
+                    margin: 0;
+                    padding: 2px;
+                    margin-bottom: 9px;
+                    margin-top: 10px;
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: 'Barra';
+                    font-weight: normal;
+                }
+                p{
+                    font-family: 'Barra';
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .texto:hover{
+            background-color: $fondoempanada;
+        }
+    }
+
+
+    .titulo{
+        font-family: 'Barra';
+        text-align: center;
+        font-size: 30px;
+        color:  $color_letra_barra;
+        gap: 20px;
+        padding: 10px;
+        padding-bottom: 20px;
+        background-color: $fondopanaderia2;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        
+        h2{
+            transition: transform 0.3s ease-in-out;
+            font-weight:normal;
+        }
+        img{
+            margin-top: 40px;
+        }
+    }
+
+    h2:hover{
+        transform: scale(1.1);
+    }
+
+    .ultimos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 100px); 
+        justify-items: center;
+        align-items: center;
+        gap: 70px;
+        padding: 40px;
+        padding-bottom: 50px;
+        background-color: $fondopanaderia2;
+        
+        .texto{
+            background-color: $colormarron;
+            border-radius: 20px;
+            color: $blanco;
+            display: flex;
+            flex-direction: row;
+            height: 140px;
+            transition: background-color 0.5s ease;
+            .barras{
+                background-color: $color_barra;
+                width: 6px;
+                height: 100%;
+            }
+            .fotos{
+                padding: 15px;
+            }
+            .descripcion{
+                h2{
+                    margin: 0;
+                    padding: 2px;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: 'Barra';
+                    font-weight: normal;
+                }
+                p{
+                    font-family: 'Barra';
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+        }
+        
+        .texto:hover{
+            background-color: $color_fondo_texto;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1150px){
+
+    header{
+        .icono{
+            img{
+                width: 130px;
+                height: auto;
+            }
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
+
+    main {
+        .dos{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 100px); 
+            .texto{
+                width: 70%;
+                .fotos{
+                    img{
+                        padding-top: 13px;
+                        width: 100px;
+                        height: 80px;
+                    }
+                }
+                .descripcion{
+                    h2{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .uno{
+            padding-top: 3px;
+            .texto{
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 10%;
+                .fotos{
+                    img{
+                        padding-top: 13px;
+                        width: 100px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+        .ultimos{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 100px); 
+            .texto{
+                width: 70%;
+                .fotos{
+                    img{
+                        padding-top: 13px;
+                        width: 100px;
+                        height: 80px;
+                    }
+                }
+                .descripcion{
+                    h2{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+        }
+    }
+    }
+}

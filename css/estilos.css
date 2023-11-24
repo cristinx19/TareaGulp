@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Titulo";
+  src: url("../fuentes/MonteCarlo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Barra";
+  src: url("../fuentes/Neucha-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Texto";
+  src: url("../fuentes/Montaga-Regular.ttf") format("truetype");
+}
+header {
+  padding-bottom: 1px;
+  background-color: #F1E2CD;
+}
+header .icono {
+  text-align: center;
+}
+header .banderas {
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+header .banderas .espa {
+  background-color: white;
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+header .banderas .espa .esp {
+  margin-top: 5px;
+}
+header .banderas .portu {
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+header .banderas .portu .port {
+  margin-top: 5px;
+}
+header .espa:hover {
+  background-color: rgb(237, 72, 72);
+}
+header .portu:hover {
+  background-color: rgb(237, 72, 72);
+}
+header h1 {
+  text-align: center;
+  color: #5B3E23;
+  font-family: "Titulo";
+  font-size: 70px;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+header h1:hover {
+  transform: scale(1.1);
+}
+header .barra {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #B99174;
+  width: 65%;
+  height: 60px;
+  margin: auto;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+header .barra p {
+  margin: 10px;
+  padding: 5%;
+  font-family: "Barra";
+  font-size: 230%;
+}
+header .barra p a {
+  text-decoration: none;
+  color: #5B3E23;
+}
+header .barra p a:hover {
+  color: white;
+}
+header .barra .barrita {
+  background-color: #5B3E23;
+  width: 2.5px;
+  height: 100%;
+  padding: 0;
+}
+header .barra .barrita1 {
+  background-color: #5B3E23;
+  width: 2.5px;
+  height: 100%;
+  padding: 0;
+}
+
+main {
+  background-color: #D5B197;
+  display: flex;
+  padding: 20px;
+}
+main .texto {
+  background-color: #967455;
+  margin: 10px;
+  border-radius: 20px;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+main .texto .fototexto {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .texto .fototexto h2 {
+  font-family: "Titulo";
+  font-size: 50px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+main .texto .fototexto img {
+  border-radius: 20px;
+}
+main .texto .barratexto {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #B99174;
+}
+main .texto p {
+  padding: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: "Texto";
+  text-align: justify;
+  font-size: 24px;
+}
+main .texto:hover {
+  background-color: #524130;
+}
+main .video {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+main .video video {
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 5px rgba(65, 65, 65, 0.5);
+}
+main .video img {
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+main .video img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #6E5339;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p {
+  font-family: "Texto";
+  margin: 30px;
+  font-size: 18px;
+}
+footer p:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 1300px) {
+  header .barra p {
+    font-size: 130%;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .video video {
+    width: 700px;
+    height: auto;
+  }
+  main .video img {
+    width: 600px;
+    height: auto;
+  }
+  main .texto .fototexto h2 {
+    font-size: 50px;
+  }
+  main .texto p {
+    font-size: 25px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header .barra p {
+    font-size: 80%;
+  }
+  main {
+    flex-direction: column;
+  }
+  main .video video {
+    width: 400px;
+    height: auto;
+  }
+  main .video img {
+    width: 300px;
+    height: auto;
+  }
+  main .texto .fototexto h2 {
+    font-size: 30px;
+  }
+  main .texto p {
+    font-size: 15px;
+  }
+  footer p {
+    font-size: 9px;
+  }
+}
