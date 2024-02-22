@@ -2,9 +2,12 @@
   "devDependencies": {
     "dart-sass": "^1.25.0",
     "del": "^5.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-git": "^2.10.1",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "simple-git": "^3.22.0"
   },
   "dependencies": {
     "gulp": "^4.0.2"
