@@ -1,1 +1,3 @@
 # TareaGulp
+
+![](./img/git.png)
